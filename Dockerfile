@@ -1,4 +1,4 @@
-FROM ubuntu:16.04
+FROM python
 
 MAINTAINER Marzouq Abedur Rahman "marzouq@marzex.tech"
 
@@ -11,8 +11,6 @@ WORKDIR /
 
 RUN pip3 install -r requirements.txt
 
-COPY .. /
+COPY app.py /
 
-ENTRYPOINT [ "python3" ]
-
-CMD [ "app.py" ]
+CMD ["python", "./app.py"]

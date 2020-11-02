@@ -54,9 +54,5 @@ if __name__ == "__main__":
         itemID += 1
 
     # Write dictionary to output json file
-    with open("dataminingchallenge.json", "w") as outfile:
+    with open("output/dataminingchallenge.json", "w") as outfile:
         json.dump(itemDictionary, outfile)
-
-
-
-
